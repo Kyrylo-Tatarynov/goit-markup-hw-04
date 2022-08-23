@@ -138,6 +138,20 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+.link-box {
+    display: flex;
+    align-items: center;
+}
+.contact-icon {
+    margin-right: 10px;
+    height: 12px;
+    width: 16px;
+    fill: currentColor;
+}
+.smartphone {
+    height: 16px;
+    width: 10px;
+}
 .navigation-list .link:focus,
 .navigation-list .link:hover,
 .header-contacts .contact:hover,
@@ -207,9 +221,20 @@ img {
 .benefits-list .item:not(:last-child) {
     margin-right: 30px;
 } 
-
 .second-part .item {
     width: 270px;
+}
+.box {
+    margin-bottom: 30px;
+    height: 120px;
+    padding: 25px 100px;
+
+    background-color: var(--secondary-bg-color);
+    border-radius: 4px;
+}
+.svg-box {
+    height: 70px;
+    width: 70px;
 }
 .second-part .subtitle {
     margin-bottom: 9px;
@@ -270,7 +295,34 @@ img {
     color: var(--tittle-text-color);
     font-weight: 500;
 }
-
+.job-title {
+    margin-bottom: 16px;
+}
+.wokers-link {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+.wokers-link .link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    fill: #AFB1B8;
+    background-color: var(--main-bg-color);
+    border-radius: 50%;
+}
+.size {
+    height: 20px;
+    width: 20px;
+}
+.wokers-link .link:hover,
+.wokers-link .link:focus {
+    background-color: var(--accent-bg-blue-color);
+    fill: var(--secondary-text-color);
+}
 /* ---FIFTH PART--- */
 
 .fifth-part .title {
