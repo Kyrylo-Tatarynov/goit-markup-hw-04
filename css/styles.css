@@ -328,7 +328,30 @@ img {
 .fifth-part .title {
     text-transform: capitalize;
 }
+.customers {
+    display: flex;
+    column-gap: 30px;
+}
+.customer-link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8
 
+}
+.customer-icon {
+    width: 106px;
+    height: 60px;
+}
+
+.customer-link:hover, .customer-link:focus {
+    fill: var(--accent-text-color);
+    border: 1px solid var(--accent-text-color)
+}
 /* ------------------------------------- */
 /*              STYLES FOOTER            */
 /* ------------------------------------- */
