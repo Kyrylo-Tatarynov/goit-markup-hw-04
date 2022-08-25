@@ -10,6 +10,8 @@
     --accent-bg-blue-color: #2196F3;
 
     --border-color: #EEEEEE;
+
+    --icon-color: #AFB1B8;
 }
 
 /* ------------------------------------- */
@@ -127,7 +129,6 @@ img {
     margin-right: 50px;
 }
 .header-contacts .contact {
-    display: block;
     padding-top: 25px;
     padding-bottom: 25px;
 
@@ -218,9 +219,11 @@ img {
     width: 270px;
 }
 .svg-box {
+    display: flex;
     margin-bottom: 30px;
     height: 120px;
-    padding: 25px 100px;
+    justify-content: center;
+    align-items: center;
 
     background-color: var(--secondary-bg-color);
     border-radius: 4px;
@@ -299,7 +302,7 @@ img {
     justify-content: center;
     align-items: center;
     row-gap: 10px;
-    fill: #AFB1B8;
+    fill: var(--icon-color);
     background-color: var(--main-bg-color);
     border-radius: 50%;
 }
@@ -323,14 +326,15 @@ img {
     height: 92px;
     justify-content: center;
     align-items: center;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--icon-color);
     border-radius: 4px;
-    fill: #AFB1B8
+    fill: var(--icon-color);
 }
 .customer-link:hover, .customer-link:focus {
     fill: var(--accent-text-color);
-    border: 1px solid var(--accent-text-color)
+    border-color: var(--accent-text-color);
 }
+
 /* ------------------------------------- */
 /*              STYLES FOOTER            */
 /* ------------------------------------- */
@@ -379,7 +383,9 @@ footer .logo.link {
 }
 .main-icons .text {
     margin-bottom: 20px;
+
     color: var(--secondary-text-color);
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-align: left;
@@ -444,6 +450,9 @@ footer .logo.link {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+.portfolio-link {
+    display: inline-block;
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
